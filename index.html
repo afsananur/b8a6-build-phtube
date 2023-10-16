@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+
+
+    <!-- tailwind -->
+          
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+ 
+
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 p-6">
+            <div class="navbar-start">
+                <img src="Logo.png" alt="">
+             
+            </div>
+            <div class="navbar-center hidden lg:flex">
+             
+                <a id="view-btn" onclick="handleSortView()" class="btn">Sort by view</a>
+              
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Blog</a>
+            </div>
+          </div>
+    </header>
+    <div class="divider"></div> 
+
+<main>
+    <section>
+       
+       
+                <div   id="tab" class="tab text-center  flex justify-center gap-6 my-8 content-center"  > </div>
+    </section>
+
+    <section>
+                <div id="category-container" class=" grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-3 " ></div>
+
+
+    </section>
+
+    <section class="flex justify-center mt-10">
+        <div id="empty-container" >
+         
+            <div class="flex justify-end bg-slate-950">
+               <img src="Icon.png" alt="">
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+    <script src="js/tube.js"></script>
+</body>
+</html>
